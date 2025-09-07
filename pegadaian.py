@@ -34,11 +34,11 @@ def metrics():
     try:
         harga_beli, harga_jual = get_pegadaian_price()
         output = []
-        output.append(f"# HELP pegadaian_harga_beli Harga beli emas Pegadaian (per 0.01 gr)")
+        output.append(f"# HELP pegadaian_harga_beli Harga beli emas Pegadaian (per 1 gr)")
         output.append(f"# TYPE pegadaian_harga_beli gauge")
         output.append(f"pegadaian_harga_beli {harga_beli}")
 
-        output.append(f"# HELP pegadaian_harga_jual Harga jual emas Pegadaian (per 0.01 gr)")
+        output.append(f"# HELP pegadaian_harga_jual Harga jual emas Pegadaian (per 1 gr)")
         output.append(f"# TYPE pegadaian_harga_jual gauge")
         output.append(f"pegadaian_harga_jual {harga_jual}")
 
