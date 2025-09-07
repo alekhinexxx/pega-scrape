@@ -24,7 +24,7 @@ Data hasil scrape tersedia dalam format **JSON** dan **Prometheus metrics**.
 2. git clone https://github.com/username/pega-scrape.git
 3. cd pega-scrape
 4. pip install -r requirements.txt
-5. python scraper.py
+5. python pegadaian.py
 
 Secara default, web server berjalan di:
 http://127.0.0.1:8000/metrics atau http://127.0.0.1:8000/json
